@@ -1,0 +1,15 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YELP MVP</title>
+</head>
+<body>
+  <h1>Welcom To YELP</h1>
+  <h3>All the best restaurant's you'll never try! :P</h3>
+
+  <% @restaurants.each do |r| %>
+    <h2><%= r.name %></h2>
+    <p><%= r.address %></p>
+  <% end %>
+</body>
+</html>
